@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
 <html>
     <head>
@@ -26,7 +27,7 @@
             <form:errors path="*" cssClass="errors-top" element="div"/>
             <table>
                 <tr>
-                    <td>Book Name</td>
+                    <td><spring:message code="book.name"/></td>
                     <td>
                         <form:input path="name"/>
                     </td>
